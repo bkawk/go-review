@@ -8,7 +8,7 @@ func main() {
 	fmt.Println("Total number of cups needed:", howMany(cups))
 
 	// pass 2 numbers to a single function
-	num1, num2 := next2Values(5)
+	num1, num2 := doubleReturn(5)
 	fmt.Println(num1, num2)
 
 	fmt.Println(whatsLeft(1, 2, 3, 4, 5))
@@ -24,7 +24,7 @@ func howMany(cups []float64) float64 {
 }
 
 // return 2 numbers!
-func next2Values(number int) (int, int) {
+func doubleReturn(number int) (int, int) {
 	return number * 1, number * 2
 }
 
