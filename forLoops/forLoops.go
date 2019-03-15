@@ -29,6 +29,14 @@ func main() {
 		fmt.Println(value, j)
 	}
 
+	// for range with unused iterator
+	var cups = []float64{1, 2.5, 3, 4.5, 5}
+	totalCups := 0.0
+	for _, amount := range cups {
+		totalCups += amount
+	}
+	fmt.Println(totalCups)
+
 }
 
 // go run forLoops.go
